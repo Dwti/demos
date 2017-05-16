@@ -2,6 +2,8 @@ package exampleexample.testing.justjava;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,4 +12,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void submitOrder(View view){
+            display(1888888);
+    }
+    public  void  display(int number){
+        TextView textView=(TextView)findViewById(R.id.count_text_view);
+        textView.setText(" "+number);
+
+}
 }

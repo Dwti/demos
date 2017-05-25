@@ -1,12 +1,14 @@
 package exampleexample.testing.justjava;
 
 import android.icu.text.NumberFormat;
+import android.media.MediaPlayer;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void addOrder(View view){
           count=count+1;
-            display(count);
+            displayCount(count);
 
     }
     public void reduceOrder(View view){
@@ -27,25 +29,38 @@ public class MainActivity extends AppCompatActivity {
             count=0;
         }
         else {
-            display(count);
+            displayCount(count);
         }
 
     }
-    public void submitOrder(){
+    public void submitOrder(View view){
         int price=8;
-        displayPrice(count*price);
+        String message="hello"+calulatePrice(price)          ;
+//        displayPrice(price);
+        displayMessage(message);
     }
-    public  void  display(int number){
+
+    public  void  displayCount(int number){
       TextView textView=(TextView) findViewById(R.id.count_text_view);
         textView.setText(""+number);
 
 }
 
-    public  void  displayPrice(int price){
-        TextView textView=(TextView) findViewById(R.id.pricecount_text_view);
+    public  void  displayPrice(int price) {
+        TextView textView = (TextView) findViewById(R.id.pricecount_text_view);
 //        textView.setText(NumberFormat.getCurrencyInstance().format(price));
-            textView.setText(""+price);
+        textView.setText(" " + count * price);
+    }
+    public void displayMessage(String message) {
+        TextView textView = (TextView) findViewById(R.id.pricecount_text_view);
 
+        textView.setText("" + message);
 
     }
+    private  int calulatePrice(int price){
+        int sumPrice=count*price;
+        return  sumPrice;
+    }
+//    MediaPlayer mediaPlayer=MediaPlayer.create();
+//    Toast toast=Toast.makeText();
 }

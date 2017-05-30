@@ -18,7 +18,7 @@
             android:id="@+id/edit_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="please input your name"
+            android:hint="@string/hint"
             android:inputType="number"
             android:imeOptions="actionNext"
 
@@ -27,8 +27,9 @@
             android:id="@+id/topping_tetxt_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="topping"
-            android:textColor="#000000"
+            android:text="@string/topping_text"
+            style="@style/CommonText"
+
             />
         <CheckBox
             android:id="@+id/checkbox_chocolate"
@@ -46,8 +47,8 @@
             android:id="@+id/quality_tetxt_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="quality"
-            android:textColor="#000000"
+            android:text="@string/count_text"
+            style="@style/CommonText"
             />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -85,8 +86,8 @@
             android:id="@+id/price_tetxt_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="price"
-            android:textColor="#000000"
+            android:text="@string/order_detail_text"
+            style="@style/CommonText"
             />
         <TextView
             android:id="@+id/pricecount_text_view"
@@ -101,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Order"
+            android:text="@string/order_text"
             android:textAllCaps="false"
             android:onClick="submitOrder"
             />

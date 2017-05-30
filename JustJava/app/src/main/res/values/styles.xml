@@ -7,5 +7,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="CommonText">
+        <!--所以的文本框的样式-->
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#FF8A1D9F</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+
 
 </resources>

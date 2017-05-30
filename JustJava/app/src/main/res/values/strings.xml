@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Just Java</string>
+    <string name="hint">请输入你的姓名</string>
+    <string name="topping_text">配料</string>
+    <string name="count_text">数量</string>
+    <string name="order_detail_text">订单详情</string>
+    <string name="order_text">确定</string>
 </resources>

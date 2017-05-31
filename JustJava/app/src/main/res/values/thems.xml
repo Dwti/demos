@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="them_color">#b0b0ff</color>
+    <style name="MyThem" parent="android:Theme.Black">
+        <item name="android:windowBackground">@color/them_color</item>
+        <item name="android:colorBackground">@color/them_color</item>
+    </style>
+
+</resources>

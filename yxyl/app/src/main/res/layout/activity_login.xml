@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="yanxiu.com.yxyl.Login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorCommon"
@@ -11,18 +12,17 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="yanxiu.com.yxyl.Login"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
 
     >
     <ImageView
-        android:layout_weight="0"
         android:layout_width="match_parent"
-        android:layout_height="400px"
+        android:layout_height="200dp"
         android:background="@color/colorAccent"
         />
     <LinearLayout
-        android:layout_marginTop="20px"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -31,27 +31,28 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#69ad0a"
+            android:background="@drawable/bottom_round_corners_5dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             >
             <EditText
                 android:id="@+id/login_name"
-                android:layout_width="610dp"
-                android:layout_height="100px"
+                android:layout_width="305dp"
+                android:layout_height="50dp"
                 android:hint="请输入账号或者手机号"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/colorCommon"
-                android:textSize="32px"
-                android:paddingLeft="40px"
+                android:textSize="16dp"
+                android:paddingLeft="20dp"
                 android:background="@null"
                 android:maxLength="16"
 
+
                 />
             <ImageView
-                android:layout_width="34px"
-                android:layout_height="34px"
-                android:layout_marginRight="34px"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="17dp"
                 android:background="#FF0E25D7"
                 />
 
@@ -61,18 +62,18 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="2px"
-            android:background="#69ad0a">
+            android:layout_marginTop="1dp"
+            android:background="@drawable/botton_round_corners_5dp">
             <EditText
                 android:id="@+id/login_password"
-                android:layout_width="610dp"
-                android:layout_height="100px"
+                android:layout_width="305dp"
+                android:layout_height="50dp"
                 android:hint="请输入密码"
                 android:textColorHint="@color/colorCommon"
                 android:textColor="#FFFFFF"
-                android:textSize="32px"
+                android:textSize="16dp"
                 android:typeface="monospace"
-                android:paddingLeft="40px"
+                android:paddingLeft="20dp"
                 android:background="@null"
                 android:maxLength="18"
                 android:inputType="textPassword"
@@ -80,9 +81,9 @@
 
                 />
             <ImageView
-                android:layout_width="34px"
-                android:layout_height="34px"
-                android:layout_marginRight="34px"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="17dp"
                 android:background="#FF0E25D7">
 
             </ImageView>
@@ -90,35 +91,37 @@
         </LinearLayout>
         <Button
             android:id="@+id/login_botton"
-            android:layout_width="644dp"
+            android:layout_width="339dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="30px"
-            android:text="登录"
-            android:textSize="36px"
+            android:layout_marginTop="15dp"
+            android:text="登 录"
+            android:textSize="18dp"
             android:textColor="@color/colorCommon"
-            android:background="#69ad0a"/>
+            android:background="@drawable/button_round_corners_6dp"/>
     </LinearLayout>
         <RelativeLayout
-            android:layout_width="644dp"
+            android:layout_width="339dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="15dp"
             android:layout_gravity="center_horizontal"
             >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="忘记密码？"
-            android:textSize="28px"
+            android:textSize="14dp"
             android:textColor="#FFFFFF"
             android:layout_alignParentLeft="true"
+            android:onClick="ForgetPass"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="快速注册!"
-            android:textSize="28px"
+            android:textSize="14dp"
             android:textColor="#FFFFFF"
             android:layout_alignParentRight="true"
+            android:onClick="Register"
 
 
             />

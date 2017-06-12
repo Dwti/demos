@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My First Application</string>
+    <string name="login_namehint">请输入账号</string>
+    <string name="del_username">X</string>
+    <string name="password">请输入密码</string>
+    <string name="login_name">登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="register">快速注册！</string>
+    <string name="other_login">其他账号登录</string>
+
+</resources>

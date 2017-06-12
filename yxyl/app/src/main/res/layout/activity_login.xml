@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCommon"
+    >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yanxiu.com.yxyl.Login"
+    android:orientation="vertical"
+
+    >
+    <ImageView
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:background="@color/colorAccent"
+        />
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#69ad0a"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="610dp"
+                android:layout_height="100px"
+                android:hint="请输入账号或者手机号"
+                android:textColor="#FFFFFF"
+                android:textColorHint="@color/colorCommon"
+                android:textSize="32px"
+                android:paddingLeft="40px"
+                android:background="@null"
+                android:maxLength="16"
+
+                />
+            <ImageView
+                android:layout_width="34px"
+                android:layout_height="34px"
+                android:layout_marginRight="34px"
+                android:background="#FF0E25D7"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="2px"
+            android:background="#69ad0a">
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="610dp"
+                android:layout_height="100px"
+                android:hint="请输入密码"
+                android:textColorHint="@color/colorCommon"
+                android:textColor="#FFFFFF"
+                android:textSize="32px"
+                android:typeface="monospace"
+                android:paddingLeft="40px"
+                android:background="@null"
+                android:maxLength="18"
+                android:inputType="textPassword"
+
+
+                />
+            <ImageView
+                android:layout_width="34px"
+                android:layout_height="34px"
+                android:layout_marginRight="34px"
+                android:background="#FF0E25D7">
+
+            </ImageView>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/login_botton"
+            android:layout_width="644dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30px"
+            android:text="登录"
+            android:textSize="36px"
+            android:textColor="@color/colorCommon"
+            android:background="#69ad0a"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="644dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_gravity="center_horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textSize="28px"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速注册!"
+            android:textSize="28px"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

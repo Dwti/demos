@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PassCommon">
+        <item name="android:layout_width">269dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:hint">请输入6-18位密码</item>
+        <item name="android:textColorHint">@color/colorCommon</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLevel">18</item>
+    </style>
+</resources>

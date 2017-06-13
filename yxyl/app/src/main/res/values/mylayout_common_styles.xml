@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:layout_width="305dp"
+          android:layout_height="50dp"
+          android:background="@drawable/top_round_corners_5dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"-->
+<resources>
+    <style name="MylayoutCommon">
+        <item name="android:layout_width">305dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+</resources>

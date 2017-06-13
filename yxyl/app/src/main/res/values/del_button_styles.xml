@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DeltextbuttonCommon">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:background">#FF0E25D7</item>
+
+    </style>
+</resources>

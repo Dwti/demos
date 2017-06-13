@@ -29,16 +29,14 @@
         android:gravity="center_horizontal"
         >
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bottom_round_corners_5dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
+            style="@style/MylayoutCommon"
+            android:background="@drawable/top_round_corners_5dp"
+
             >
             <EditText
                 android:id="@+id/login_name"
-                android:layout_width="305dp"
-                android:layout_height="50dp"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
                 android:hint="请输入账号或者手机号"
                 android:textColor="#FFFFFF"
                 android:textColorHint="@color/colorCommon"
@@ -50,57 +48,35 @@
 
                 />
             <ImageView
-                android:layout_width="17dp"
-                android:layout_height="17dp"
-                android:layout_marginRight="17dp"
-                android:background="#FF0E25D7"
+                android:id="@+id/delmoblie_button"
+                style="@style/DeltextbuttonCommon"
                 />
 
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            style="@style/MylayoutCommon"
             android:layout_marginTop="1dp"
             android:background="@drawable/botton_round_corners_5dp">
             <EditText
                 android:id="@+id/login_password"
-                android:layout_width="305dp"
-                android:layout_height="50dp"
+                style="@style/PassCommon"
                 android:hint="请输入密码"
-                android:textColorHint="@color/colorCommon"
-                android:textColor="#FFFFFF"
-                android:textSize="16dp"
-                android:typeface="monospace"
-                android:paddingLeft="20dp"
-                android:background="@null"
-                android:maxLength="18"
-                android:inputType="textPassword"
-
 
                 />
             <ImageView
-                android:layout_width="17dp"
-                android:layout_height="17dp"
-                android:layout_marginRight="17dp"
-                android:background="#FF0E25D7">
+                android:id="@+id/visible_pass"
+                style="@style/DeltextbuttonCommon">
 
             </ImageView>
 
         </LinearLayout>
         <Button
-            android:id="@+id/login_botton"
-            android:layout_width="339dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="15dp"
+            style="@style/ButtonCommon"
             android:text="登 录"
-            android:textSize="18dp"
-            android:textColor="@color/colorCommon"
-            android:background="@drawable/button_round_corners_6dp"/>
+            />
     </LinearLayout>
         <RelativeLayout
-            android:layout_width="339dp"
+            android:layout_width="305dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_gravity="center_horizontal"

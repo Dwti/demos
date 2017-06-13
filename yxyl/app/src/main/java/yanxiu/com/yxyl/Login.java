@@ -13,12 +13,12 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-    String loginname;
-    EditText text =(EditText) findViewById(R.id.login_name);
-
-    public EditText getText() {
-        return text;
-    }
+////    String loginname;
+////    EditText text =(EditText) findViewById(R.id.login_name);
+//
+//    public EditText getText() {
+//        return text;
+//    }
 
     public void ForgetPass(View view){
         Intent intent =new Intent(this,ForgetPassword.class);

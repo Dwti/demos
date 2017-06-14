@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--<item name="android:layout_marginLeft">124.5dp</item>
+android:layout_centerHorizontal="true"
+<item name="android:gravity">center_vertical</item>-->
 <resources>
     <style name="TitleTextCommon">
-        <item name="android:layout_width">287dp</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginLeft">124.5dp</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_centerInParent">true</item>
         <item name="android:textSize">19dp</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
     </style>
 </resources>

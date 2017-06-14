@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="yanxiu.com.yxyl.Register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCommon">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            style="@style/TitleCommon"
+            >
+            <ImageView
+                style="@style/CancelOrBackCommon"
+                />
+            <TextView
+                android:text="加入班级"
+                style="@style/TitleTextCommon"/>
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入8位班级号"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#69ad0a"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                style="@style/MylayoutCommon"
+                android:background="@drawable/button_round_corners_6dp"
+                >
+                <EditText
+                    android:id="@+id/class_number"
+                    style="@style/PassCommon"
+                    android:hint=""
+                    android:layout_width="269dp"
+                    android:layout_height="match_parent"
+                    android:maxLength="8"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <Button
+                style="@style/ButtonCommon"
+                android:text="下一步"
+                android:onClick="nextStep"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有班级可加，跳过此步"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+
+                android:textColor="#69ad0a"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                style="@style/DeltextbuttonCommon"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -74,6 +74,7 @@
         <Button
             style="@style/ButtonCommon"
             android:text="登 录"
+            android:onClick="loginSuccess"
             />
     </LinearLayout>
         <RelativeLayout
@@ -89,7 +90,7 @@
             android:textSize="14dp"
             android:textColor="#FFFFFF"
             android:layout_alignParentLeft="true"
-            android:onClick="ForgetPass"
+            android:onClick="forgetPass"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -98,7 +99,7 @@
             android:textSize="14dp"
             android:textColor="#FFFFFF"
             android:layout_alignParentRight="true"
-            android:onClick="Register"
+            android:onClick="register"
 
 
             />

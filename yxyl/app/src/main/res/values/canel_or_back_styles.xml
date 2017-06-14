@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:layout_marginLeft="12dp"
+                android:layout_marginTop="14.5dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="#303F9F"-->
+<resources>
+    <style name="CancelOrBackCommon">
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">14.5dp</item>
+        <item name="android:layout_width">26dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:background">#303F9F</item>
+
+    </style>
+</resources>

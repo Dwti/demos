@@ -20,13 +20,19 @@ public class Login extends AppCompatActivity {
 //        return text;
 //    }
 
-    public void ForgetPass(View view){
+     public  void loginSuccess(View view){
+         Intent intent =new Intent(this,JoinClass.class);
+         if(intent.resolveActivity(getPackageManager())!=null) {
+             startActivity(intent);
+         }
+     }
+    public void forgetPass(View view){
         Intent intent =new Intent(this,ForgetPassword.class);
         if(intent.resolveActivity(getPackageManager())!=null){
             startActivity(intent);
         }
     }
-    public void Register(View view) {
+    public void register(View view) {
         Intent intent = new Intent(this, Register.class);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

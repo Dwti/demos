@@ -11,20 +11,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center_horizontal">
-        <LinearLayout
+        <RelativeLayout
            style="@style/TitleCommon"
             >
             <ImageView
-                android:layout_marginLeft="12dp"
-                android:layout_width="26dp"
-                android:layout_height="26dp"
-                android:background="#303F9F"
+                style="@style/CancelOrBackCommon"
                 />
             <TextView
                 android:text="注册"
                 style="@style/TitleTextCommon"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
 

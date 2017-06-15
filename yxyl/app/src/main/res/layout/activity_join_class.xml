@@ -68,6 +68,7 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="15dp"
+            android:onClick="skimJoinClass"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -75,7 +76,6 @@
                 android:text="没有班级可加，跳过此步"
                 android:textSize="16dp"
                 android:layout_gravity="center"
-
                 android:textColor="#69ad0a"/>
             <ImageView
                 android:layout_width="15dp"

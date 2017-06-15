@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorCommon"
     >
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,8 +16,15 @@
     android:gravity="center_horizontal"
 
     >
-    <TextView
-        style="@style/TitleCommon"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/TitleCommon">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生如夏花"/>
+    </android.support.v7.widget.Toolbar>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -31,9 +39,7 @@
         >
         <LinearLayout
             style="@style/MylayoutCommon"
-            android:background="@drawable/top_round_corners_5dp"
-
-            >
+            android:background="@drawable/top_round_corners_5dp">
             <EditText
                 android:id="@+id/login_name"
                 android:layout_width="269dp"
@@ -45,14 +51,11 @@
                 android:paddingLeft="20dp"
                 android:background="@null"
                 android:maxLength="16"
-
-
                 />
             <ImageView
                 android:id="@+id/delmoblie_button"
                 style="@style/DeltextbuttonCommon"
                 />
-
         </LinearLayout>
         <LinearLayout
             style="@style/MylayoutCommon"

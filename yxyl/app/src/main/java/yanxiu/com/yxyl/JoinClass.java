@@ -12,11 +12,16 @@ public class JoinClass extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_class);
     }
-    public void nextStep(View view){
-            Intent intent =new Intent(this,CommitName.class);
-            if(intent.resolveActivity(getPackageManager())!=null) {
-                startActivity(intent);
-            }
-
+    public void nextStep(View view) {
+        Intent intent = new Intent(this, CommitName.class);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+    public void skimJoinClass(View view) {
+        Intent intent = new Intent(this, CompleteMessage.class);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }

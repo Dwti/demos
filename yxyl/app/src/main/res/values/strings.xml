@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">yxyl</string>
+    <string name="title_activity_basepage">basepage</string>
+    <string name="action_settings">Settings</string>
 </resources>

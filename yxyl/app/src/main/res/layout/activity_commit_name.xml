@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorCommon">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -117,6 +118,6 @@
             <Button
                 style="@style/ButtonCommon"
                 android:text="加入班级"
-                android:onClick="nextStep"/>
+                android:onClick="joinBasepage"/>
     </LinearLayout>
 </ScrollView>

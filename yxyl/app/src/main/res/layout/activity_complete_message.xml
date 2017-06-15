@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="yanxiu.com.yxyl.Register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCommon">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            style="@style/TitleCommon"
+            >
+            <ImageView
+                style="@style/CancelOrBackCommon"
+                />
+            <TextView
+                android:text="完善资料"
+                style="@style/TitleTextCommon"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                style="@style/MylayoutCommon"
+                android:background="@drawable/top_round_corners_5dp">
+                <TextView
+                    style="@style/ClassMessageCommon"
+                    android:text="姓名"/>
+                <EditText
+                    style="@style/PassCommon"
+                    android:hint="请输入真实姓名"
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/MylayoutCommon"
+                android:background="@color/colorMyLayoutCommon"
+                android:layout_marginTop="1dp">
+                <TextView
+                    style="@style/ClassMessageCommon"
+                    android:text="学校"/>
+
+                <ImageView
+                    style="@style/DeltextbuttonCommon"
+                    android:layout_marginLeft="210dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/MylayoutCommon"
+                android:background="@drawable/botton_round_corners_5dp"
+                android:layout_marginTop="1dp">
+                <TextView
+                    style="@style/ClassMessageCommon"
+                    android:text="学段"
+                  />
+
+                <ImageView
+                    style="@style/DeltextbuttonCommon"
+                    android:layout_marginLeft="210dp"/>
+            </LinearLayout>
+            <Button
+                style="@style/ButtonCommon"
+                android:text="提交" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

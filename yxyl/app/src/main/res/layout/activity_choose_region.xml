@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yanxiu.com.yxyl.ChooseRegion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            style="@style/TitleCommon"
+            android:background="#ffffff"
+            >
+            <ImageView
+                style="@style/CancelOrBackCommon"
+                />
+            <TextView
+                android:text="选择地区"
+                style="@style/TitleTextCommon"
+                android:textColor="#666666"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edf0ee">
+            <ListView
+            android:id="@+id/list_province_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp">
+
+        </ListView>
+            <ListView
+                android:id="@+id/list_city_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="80dp">
+
+            </ListView>
+            <ListView
+                android:id="@+id/list_county_item"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="80dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

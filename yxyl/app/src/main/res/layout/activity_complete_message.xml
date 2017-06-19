@@ -51,7 +51,8 @@
             <LinearLayout
                 style="@style/MylayoutCommon"
                 android:background="@color/colorMyLayoutCommon"
-                android:layout_marginTop="1dp">
+                android:layout_marginTop="1dp"
+                android:onClick="chooseRegion">
                 <TextView
                     style="@style/ClassMessageCommon"
                     android:text="学校"/>
@@ -65,7 +66,8 @@
             <LinearLayout
                 style="@style/MylayoutCommon"
                 android:background="@drawable/botton_round_corners_5dp"
-                android:layout_marginTop="1dp">
+                android:layout_marginTop="1dp"
+                android:onClick="chooseSection">
                 <TextView
                     style="@style/ClassMessageCommon"
                     android:text="学段"

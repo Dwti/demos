@@ -28,7 +28,9 @@
             android:name=".Basepage"
             android:label="@string/title_activity_basepage"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".CompleteMessage"></activity>
+        <activity android:name=".CompleteMessage" />
+        <activity android:name=".ChooseRegion" />
+        <activity android:name=".ChooseSection"></activity>
     </application>
 
 </manifest>

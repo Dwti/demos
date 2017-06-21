@@ -26,9 +26,9 @@ public class CityAdapter extends ArrayAdapter<RegionCityItem> {
 
     }
 
-    @NonNull
+
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public View getView(int position,  View convertView, ViewGroup parent) {
         RegionCityItem citys=getItem(position);
         View view= LayoutInflater.from( getContext()).inflate(resourceid,parent,false);
         TextView province= (TextView) view.findViewById(R.id.province_text);

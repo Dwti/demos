@@ -30,7 +30,8 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".CompleteMessage" />
         <activity android:name=".ChooseRegion" />
-        <activity android:name=".ChooseSection"></activity>
+        <activity android:name=".ChooseSection" />
+        <activity android:name=".ChooseSchool"></activity>
     </application>
 
 </manifest>

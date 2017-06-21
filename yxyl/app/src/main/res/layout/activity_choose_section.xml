@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="yanxiu.com.yxyl.ChooseSection">
+    tools:context="yanxiu.com.yxyl.ChooseRegion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <RelativeLayout
+            style="@style/TitleCommon"
+            android:background="#ffffff"
+            >
+            <ImageView
+                android:id="@+id/iv_back"
+                style="@style/CancelOrBackCommon"
+                />
+            <TextView
+                android:id="@+id/tx_title"
+                android:text="选择学段"
+                style="@style/TitleTextCommon"
+                android:textColor="#666666"/>
 
-</android.support.constraint.ConstraintLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edf0ee"
+            android:gravity="center">
+
+            <ListView
+                android:id="@+id/ls_list_section_item"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

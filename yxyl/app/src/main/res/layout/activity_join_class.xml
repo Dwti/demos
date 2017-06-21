@@ -14,10 +14,11 @@
         <RelativeLayout
             style="@style/TitleCommon"
             >
-            <ImageView
+           <!-- <ImageView
                 style="@style/CancelOrBackCommon"
-                />
+                />-->
             <TextView
+                android:id="@+id/tx_title"
                 android:text="加入班级"
                 style="@style/TitleTextCommon"/>
 
@@ -26,11 +27,13 @@
 
 
         <ImageView
+            android:id="@+id/iv_joinclass"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:background="@color/colorAccent"
             />
         <TextView
+            android:id="@+id/tx_hint_classnum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="请输入8位班级号"
@@ -49,7 +52,7 @@
                 android:background="@drawable/button_round_corners_6dp"
                 >
                 <EditText
-                    android:id="@+id/class_number"
+                    android:id="@+id/ed_class_number"
                     style="@style/PassCommon"
                     android:hint=""
                     android:layout_width="269dp"
@@ -58,6 +61,7 @@
                     android:inputType="number"/>
             </LinearLayout>
             <Button
+                android:id="@+id/bt_nextStep_button"
                 style="@style/ButtonCommon"
                 android:text="下一步"
                 android:onClick="nextStep"/>
@@ -71,6 +75,7 @@
             android:onClick="skimJoinClass"
             >
             <TextView
+                android:id="@+id/tx_skipJoinClass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="没有班级可加，跳过此步"
@@ -78,6 +83,7 @@
                 android:layout_gravity="center"
                 android:textColor="#69ad0a"/>
             <ImageView
+                android:id="@+id/iv_skipJoinClass"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginLeft="5dp"

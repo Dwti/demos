@@ -15,9 +15,11 @@
             android:background="#ffffff"
             >
             <ImageView
+                android:id="@+id/iv_back"
                 style="@style/CancelOrBackCommon"
                 />
             <TextView
+                android:id="@+id/tx_title"
                 android:text="选择地区"
                 style="@style/TitleTextCommon"
                 android:textColor="#666666"/>
@@ -28,7 +30,7 @@
             android:layout_height="match_parent"
             android:background="#edf0ee">
             <ListView
-            android:id="@+id/list_province_item"
+            android:id="@+id/ls_list_province_item"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -37,7 +39,7 @@
 
         </ListView>
             <ListView
-                android:id="@+id/list_city_item"
+                android:id="@+id/ls_list_city_item"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
@@ -46,7 +48,7 @@
 
             </ListView>
             <ListView
-                android:id="@+id/list_county_item"
+                android:id="@+id/ls_list_county_item"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"

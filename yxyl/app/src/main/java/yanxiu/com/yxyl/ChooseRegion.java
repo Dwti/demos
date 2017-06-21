@@ -1,7 +1,10 @@
 package yanxiu.com.yxyl;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 
@@ -22,15 +25,38 @@ public class ChooseRegion extends AppCompatActivity {
         setContentView(R.layout.activity_choose_region);
         initRegionsProvice();
         RegionItemAdapter yxylRegionsAdapter=new RegionItemAdapter(this,R.layout.provinceitem,yxylRegions);
+
         /*CityAdapter cityAdapte=new CityAdapter(this,R.layout.cityitem,citys);*/
         ListView listView=(ListView)findViewById(R.id.list_province_item);
+        ListView listView1=(ListView)findViewById(R.id.list_city_item);
+        ListView listView2=(ListView)findViewById(R.id.list_county_item);
         listView.setAdapter(yxylRegionsAdapter);
+
+
         initRegionsCity();
-
-
-
-
     }
+    ListView listView=(ListView)findViewById(R.id.list_province_item);
+
+
+    private AdapterView.OnItemClickListener clickListener=new AdapterView.OnItemClickListener(){
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Intent intent = new Intent();
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
+
+        }
+    };
+
+
+ /*   public void chooseSchool(View view){
+        Intent intent=new Intent(this,ChooseSchool.class);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+
+    }*/
     //初始化数据
    private void initRegionsProvice() {
        int i = 0;

@@ -15,9 +15,11 @@
            style="@style/TitleCommon"
             >
             <ImageView
+                android:id="@+id/iv_back"
                 style="@style/CancelOrBackCommon"
                 />
             <TextView
+                android:id="@+id/tx_title"
                 android:text="注册"
                 style="@style/TitleTextCommon"/>
 
@@ -26,6 +28,7 @@
 
 
     <ImageView
+        android:id="@+id/iv_register"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/colorAccent"
@@ -42,7 +45,7 @@
 
           >
           <EditText
-              android:id="@+id/moblie_number"
+              android:id="@+id/ed_moblie_number"
               style="@style/PassCommon"
               android:layout_width="269dp"
               android:layout_height="match_parent"
@@ -51,7 +54,7 @@
               android:maxLength="11"
               android:inputType="number"/>
           <ImageView
-              android:id="@+id/delmobile_button"
+              android:id="@+id/iv_clear_moblienumber"
               style="@style/DeltextbuttonCommon"/>
       </LinearLayout>
         <LinearLayout
@@ -60,7 +63,7 @@
             android:background="#69ad0a"
             >
             <EditText
-                android:id="@+id/verfication_number"
+                android:id="@+id/ed_verfication_number"
                 style="@style/CodeCommon"
                 />
             <TextView
@@ -68,6 +71,7 @@
                 android:layout_height="18dp"
                 android:background="@color/colorCommon"/>
             <TextView
+                android:id="@+id/tx_getCodenumber"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:text="获取验证码"
@@ -82,16 +86,18 @@
             android:background="@drawable/botton_round_corners_5dp"
             android:layout_marginTop="1dp">
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/ed_password"
                 style="@style/PassCommon"
                 />
             <ImageView
+                android:id="@+id/iv_cipher"
                 android:layout_width="17dp"
                 android:layout_height="17dp"
                 android:layout_marginRight="17dp"
                 android:background="#FF0E25D7"/>
         </LinearLayout>
         <Button
+            android:id="@+id/bt_register"
             style="@style/ButtonCommon"
             android:text=" 注 册" />
     </LinearLayout>

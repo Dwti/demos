@@ -3,11 +3,11 @@ package yanxiu.com.yxyl;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Guide extends AppCompatActivity {
+public class ChooseSchoolActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guide);
+        setContentView(R.layout.activity_choose_school);
     }
 }

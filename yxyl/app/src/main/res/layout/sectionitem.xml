@@ -13,4 +13,4 @@
         android:background="@drawable/textview_boder"
         android:onClick="chooseSchool"
         />
-</LinearLayout>
+    </LinearLayout>

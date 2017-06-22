@@ -13,25 +13,26 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".ForgetPassword" />
-        <activity android:name=".Register" />
-        <activity android:name=".ResetPassword" />
-        <activity android:name=".JoinClass" />
-        <activity android:name=".CommitName" />
-        <activity android:name=".Guide" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".JoinClassActivity" />
+        <activity android:name=".CommitNameActivity" />
+        <activity android:name=".GuideActivity" >
+
+        </activity>
         <activity
-            android:name=".Basepage"
+            android:name=".BasepageActivity"
             android:label="@string/title_activity_basepage"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".CompleteMessage" />
-        <activity android:name=".ChooseRegion" />
-        <activity android:name=".ChooseSection" />
-        <activity android:name=".ChooseSchool"></activity>
+        <activity android:name=".CompleteMessageActivity" />
+        <activity android:name=".ChooseRegionActivity" />
+        <activity android:name=".ChooseSectionActivity" />
+        <activity android:name=".ChooseSchoolActivity"></activity>
     </application>
 
 </manifest>

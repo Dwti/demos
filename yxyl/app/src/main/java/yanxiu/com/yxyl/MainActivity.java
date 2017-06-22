@@ -3,7 +3,6 @@ package yanxiu.com.yxyl;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //添加点击的方法启动登录界面
     public void  ToUse(View view){
-        Intent intent=new Intent(this,Login.class);
+        Intent intent=new Intent(this,LoginActivity.class);
         if(intent.resolveActivity(getPackageManager())!=null){
             startActivity(intent);
         }

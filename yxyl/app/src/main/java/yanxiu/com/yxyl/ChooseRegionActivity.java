@@ -15,7 +15,7 @@ import yanxiu.com.adapter.CityAdapter;
 import yanxiu.com.adapter.RegionItem;
 import yanxiu.com.adapter.RegionItemAdapter;
 
-public class ChooseRegion extends AppCompatActivity {
+public class ChooseRegionActivity extends AppCompatActivity {
     private List<RegionItem> yxylRegions=new ArrayList<>();
     private List<RegionItem> citys=new ArrayList<>();
     private List<RegionItem> countys=new ArrayList<>();
@@ -27,15 +27,15 @@ public class ChooseRegion extends AppCompatActivity {
         RegionItemAdapter yxylRegionsAdapter=new RegionItemAdapter(this,R.layout.provinceitem,yxylRegions);
 
         /*CityAdapter cityAdapte=new CityAdapter(this,R.layout.cityitem,citys);*/
-        ListView listView=(ListView)findViewById(R.id.list_province_item);
-        ListView listView1=(ListView)findViewById(R.id.list_city_item);
-        ListView listView2=(ListView)findViewById(R.id.list_county_item);
+        ListView listView=(ListView)findViewById(R.id.ls_list_province_item);
+        ListView listView1=(ListView)findViewById(R.id.ls_list_city_item);
+        ListView listView2=(ListView)findViewById(R.id.ls_list_county_item);
         listView.setAdapter(yxylRegionsAdapter);
 
 
         initRegionsCity();
     }
-    ListView listView=(ListView)findViewById(R.id.list_province_item);
+    ListView listView=(ListView)findViewById(R.id.ls_list_province_item);
 
 
     private AdapterView.OnItemClickListener clickListener=new AdapterView.OnItemClickListener(){

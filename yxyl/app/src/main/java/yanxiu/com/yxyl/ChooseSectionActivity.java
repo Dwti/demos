@@ -12,7 +12,7 @@ import java.util.List;
 import yanxiu.com.adapter.Section;
 import yanxiu.com.adapter.SectionAdapter;
 
-public class ChooseSection extends AppCompatActivity {
+public class ChooseSectionActivity extends AppCompatActivity {
    private List<Section> sections=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class ChooseSection extends AppCompatActivity {
         setContentView(R.layout.activity_choose_section);
         initSection();
         SectionAdapter sectionAdapter=new SectionAdapter(this,R.layout.sectionitem,sections);
-        ListView listView= (ListView) findViewById(R.id.list_section_item);
+        ListView listView= (ListView) findViewById(R.id.ls_list_section_item);
         listView.setAdapter(sectionAdapter);
 
     }

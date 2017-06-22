@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class CompleteMessage extends AppCompatActivity {
+public class CompleteMessageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,14 +14,14 @@ public class CompleteMessage extends AppCompatActivity {
     }
     //选择地区
     public void chooseRegion(View view){
-        Intent intent =new Intent(this,ChooseRegion.class);
+        Intent intent =new Intent(this,ChooseRegionActivity.class);
         if(intent.resolveActivity(getPackageManager())!=null){
             startActivity(intent);
         }
     }
     //选择学段
     public void chooseSection(View view){
-        Intent intent =new Intent(this,ChooseSection.class);
+        Intent intent =new Intent(this,ChooseSectionActivity.class);
         if(intent.resolveActivity(getPackageManager())!=null){
             startActivity(intent);
         }

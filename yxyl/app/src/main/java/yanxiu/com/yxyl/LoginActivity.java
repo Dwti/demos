@@ -10,7 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
+
+
+
     private static final String TAG = "杜杜杜";
 
     @Override
@@ -19,9 +22,9 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Log.i(TAG,"onCreate创建");
 
-        Button loginButton=(Button) findViewById(R.id.login_button);
-        final EditText loginName=(EditText) findViewById(R.id.login_name);
-        final EditText loginPass=(EditText) findViewById(R.id.login_password);
+        Button loginButton=(Button) findViewById(R.id.bt_login);
+        final EditText loginName=(EditText) findViewById(R.id.ed_login_name);
+        final EditText loginPass=(EditText) findViewById(R.id.ed_login_password);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,10 +36,10 @@ public class Login extends AppCompatActivity {
                     toast=Toast.makeText(getApplicationContext(),"hhhh",Toast.LENGTH_SHORT);
                     toast.show();
                 }
-                /*Intent intent =new Intent(Login.this,JoinClass.class);
+                Intent intent =new Intent(LoginActivity.this,JoinClassActivity.class);
                 if(intent.resolveActivity(getPackageManager())!=null) {
                     startActivity(intent);
-                }*/
+                }
             }
         });
 
@@ -48,7 +51,9 @@ public class Login extends AppCompatActivity {
 //        return text;
 //    }
 
+     private void initView(View v){
 
+  }
 
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {

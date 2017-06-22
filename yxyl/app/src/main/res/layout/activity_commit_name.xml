@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="yanxiu.com.yxyl.Register"
+    tools:context="yanxiu.com.yxyl.CommitNameActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorCommon">
@@ -16,7 +16,7 @@
             style="@style/TitleCommon"
             >
             <ImageView
-                android:id="@+id/backJoinclass"
+                android:id="@+id/iv_backJoinclass"
                 style="@style/CancelOrBackCommon"
                 />
             <TextView
@@ -112,7 +112,7 @@
                 style="@style/ClassMessageCommon"
                 android:text="你的姓名"/>
             <EditText
-                android:id="@id/ed_relname"
+                android:id="@+id/ed_realname"
                 style="@style/ClassMessageCommon"
                 android:hint="请输入你的真实姓名"
                 android:textColorHint="@color/colorCommon"

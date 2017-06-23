@@ -53,6 +53,7 @@
                 android:paddingLeft="20dp"
                 android:background="@null"
                 android:maxLength="16"
+                android:inputType="textAutoComplete"
                 />
             <ImageView
                 android:id="@+id/iv_loginname_clear"
@@ -70,7 +71,7 @@
 
                 />
             <ImageView
-                android:id="@+id/iv_cipher"
+                android:id="@+id/iv_cipher_loginPassword"
                 style="@style/DeltextbuttonCommon">
 
             </ImageView>

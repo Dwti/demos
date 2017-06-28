@@ -60,12 +60,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void lister() {
-        mClearLoginNameView.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-               mLoginNameView.setText(null);
-            }
-        });
+
         mLoginNameView.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -79,23 +74,28 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 if(!TextUtils.isEmpty(s.toString().trim())){
-                    mLoginButton.setBackgroundColor(Color.WHITE);
+//                    mLoginButton.setBackgroundColor(Color.WHITE);
                     mClearLoginNameView.setVisibility(View.VISIBLE);
                     mLoginButton.setEnabled(true);
                 }else {
                     mClearLoginNameView.setVisibility(View.INVISIBLE);
-                    mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorMyLayoutCommon));
+//                    mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorMyLayoutCommon));
                     mLoginButton.setEnabled(false);
                 }
 
             }
         });
-
+        mClearLoginNameView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                mLoginNameView.setText(null);
+            }
+        });
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, mLoginNameView.getText().toString());//获取用户名
-                mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorButtonOClick));
+//                mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorButtonOClick));
                 if (mLoginNameView.getText().toString().trim().length() < 8 || mLoginNameView.getText().toString().trim().length() > 16) {
                     Toast toast;
                     toast = Toast.makeText(getApplicationContext(), "输入的用户名位数不对", Toast.LENGTH_SHORT);
@@ -108,14 +108,14 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        mLoginButton.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+       /* mLoginButton.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if(hasFocus){
                     mLoginButton.setBackgroundColor(Color.WHITE);
                 }
             }
-        });
+        });*/
 
     }
 

@@ -84,6 +84,7 @@
             android:text="登 录"
             android:onClick="loginSuccess"
             android:enabled="false"
+            android:background="@drawable/selector_sendbtn_bg"
             />
     </LinearLayout>
         <RelativeLayout

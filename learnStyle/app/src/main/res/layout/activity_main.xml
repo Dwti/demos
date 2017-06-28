@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置矩形style-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="du.com.learnstyle.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/rectangle_1"
+        style="@style/MyTextViewRectangeCommon"
+
+        android:text="矩形"
+        android:background="@drawable/bg_rectangle"
+         />
+    <TextView
+        android:id="@+id/rectangle_2"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="圆角矩形"
+        android:background="@drawable/bg_rectangle_with_corners"
+
+         />
+    <TextView
+        android:id="@+id/rectangle_3"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="内边距矩形"
+        android:background="@drawable/bg_rectangle_padding"
+
+        />
+    <TextView
+        android:id="@+id/rectangle_4"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="渐变矩形"
+        android:background="@drawable/bg_rectangle_with_gradient"
+
+        />
+    <TextView
+        android:id="@+id/rectangle_5"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="上边角矩形"
+        android:background="@drawable/bg_rectangle_with_topcorners"
+
+        />
+    <TextView
+        android:id="@+id/rectangle_6"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="弧度矩形"
+        android:background="@drawable/bg_rectangle_with_radian"
+
+        />
+    <TextView
+        android:id="@+id/rectangle_7"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="虚线描边的矩形"
+        android:background="@drawable/bg_rectangle_with_stroke_dash"
+        />
+    <TextView
+        android:id="@+id/rectangle_8"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="镂空描边的矩形"
+        android:background="@drawable/bg_rectangle_with_storke"
+
+        />
+    <Button
+        android:id="@+id/bt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆style点这"
+        />
+
+
+</LinearLayout>

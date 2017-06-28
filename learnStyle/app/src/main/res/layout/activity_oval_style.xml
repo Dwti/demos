@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="du.com.learnstyle.OvalStyle"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/oval_1"
+        style="@style/MyTextViewOvalCommon"
+        android:text="圆圆"
+        android:background="@drawable/bg_oval"
+        />
+    <TextView
+        android:id="@+id/oval_2"
+        style="@style/MyTextViewOvalCommon"
+        android:text="圆2"
+        android:background="@drawable/bg_oblate"
+
+        />
+    <TextView
+        android:id="@+id/oval_3"
+        style="@style/MyTextViewOvalCommon"
+        android:text="圆圆3"
+        android:background="@drawable/bg_oval_with_gradient"
+
+        />
+    <TextView
+        android:id="@+id/oval_4"
+        style="@style/MyTextViewOvalCommon"
+        android:text="圆圆4"
+        android:background="@drawable/bg_oval_with_storke"
+
+        />
+    <TextView
+        android:id="@+id/oval_5"
+        style="@style/MyTextViewOvalCommon"
+        android:text="圆圆5"
+        android:background="@drawable/bg_oval_with_storke_dash"
+
+        />
+
+    <Button
+        android:id="@+id/bt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线线style点这"
+        />
+
+
+</LinearLayout>

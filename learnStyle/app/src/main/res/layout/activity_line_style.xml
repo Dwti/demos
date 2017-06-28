@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="du.com.learnstyle.LineStyle"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/line_1"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="实线条"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_line"/>
+    <TextView
+        android:id="@+id/line_2"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="虚线条"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_line_dash"
+        android:layerType="software"/>
+    <TextView
+        android:id="@+id/line_3"
+        style="@style/MyTextViewRectangeCommon"
+        android:text="粗线条"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_line_big"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/bt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆style点这"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--默认形状是矩形-->
+ <shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--填充颜色-->
+    <solid android:color="#2f90db"/>
+    <!--&lt;!&ndash;linear 线性渐变，默认的渐变类型-->
+    <!--radial 放射渐变，设置该项时，android:gradientRadius也必须设置-->
+    <!--sweep 扫描性渐变;-->
+    <gradient
+        android:type="linear"
+        android:startColor="#2c2c90db"
+        android:centerColor="#882c90db"
+        android:endColor="#2c90db"
+        android:angle="0">
+
+    </gradient>
+
+</shape>

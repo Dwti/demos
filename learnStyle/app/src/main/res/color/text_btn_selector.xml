@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--失去窗口焦点时-->
+    <item android:color="@color/colorAccent" android:state_window_focused="false"></item>
+    <!--不可点击时-->
+    <item android:color="@color/colorPrimary" android:state_enabled="false"></item>
+    <!--可点击时-->
+    <item android:color="#ffffff" android:state_enabled="true"></item>
+    <!--选选中时-->
+    <item android:color="#2d3aff" android:state_selected="true"></item>
+    <!--默认的值-->
+    <item android:color="#000000"></item>
+
+
+
+</selector>

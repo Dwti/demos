@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".OvalStyle" />
         <activity android:name=".LineStyle" />
-        <activity android:name=".RingStyle"></activity>
+        <activity android:name=".RingStyle" />
+        <activity android:name=".TableStyle"></activity>
     </application>
 
 </manifest>

@@ -9,21 +9,31 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.lang.Throwable;
 
 
 public class LoginActivity extends AppCompatActivity {
+    private LinearLayout mLayout;
     private EditText mLoginNameView, mPasswordView;
-    private ImageView mClearLoginNameView, mCipherPassView;
+    private ImageView mClearLoginNameView;
+    private CheckBox mCipherPassView;
     private TextView mRegisterView, mForgetPassView;
     private Button mLoginButton;
     private boolean isEmpty;
+    private  boolean hasChanged;
+    private boolean hasCipher=false;
 
 
     private static final String TAG = "杜杜杜";
@@ -32,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Log.i(TAG, "onCreate创建");
+        Log.i(TAG, "onCreate创建"+isEmpty);
         initView();
         lister();
 //        initData();
@@ -49,46 +59,71 @@ public class LoginActivity extends AppCompatActivity {
 //    }
 /*初始化界面*/
     private void initView() {
+        mLayout=(LinearLayout) findViewById(R.id.layout);
         mLoginNameView = (EditText) findViewById(R.id.ed_login_name);
         mPasswordView = (EditText) findViewById(R.id.ed_login_password);
         mClearLoginNameView = (ImageView) findViewById(R.id.iv_loginname_clear);
-        mCipherPassView = (ImageView) findViewById(R.id.iv_cipher_loginPassword);
+        mCipherPassView = (CheckBox) findViewById(R.id.iv_cipher_loginPassword);
         mRegisterView = (TextView) findViewById(R.id.tx_register);
         mForgetPassView = (TextView) findViewById(R.id.tx_forgetPass);
         mLoginButton = (Button) findViewById(R.id.bt_login);
 
+
     }
 
+    private void hasChanged() {
+        MyTextWatch myTextWatch=new MyTextWatch();
+        mLoginNameView.addTextChangedListener(myTextWatch);
+        mPasswordView.addTextChangedListener(myTextWatch);
+    }
+    //自定义监听器
+    class MyTextWatch implements TextWatcher{
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+          if(mLoginNameView.length()>0){
+              mClearLoginNameView.setVisibility(View.VISIBLE);
+          }
+          else{
+              mClearLoginNameView.setVisibility(View.INVISIBLE);
+          }
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+            if(mLoginNameView.length()>0&&mPasswordView.length()>0){
+                mLoginButton.setEnabled(true);
+            }else {
+                mLoginButton.setEnabled(false);
+            }
+
+        }
+
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+    }
     private void lister() {
+        hasChanged();
 
-        mLoginNameView.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if(!TextUtils.isEmpty(s.toString().trim())){
-//                    mLoginButton.setBackgroundColor(Color.WHITE);
-                    mClearLoginNameView.setVisibility(View.VISIBLE);
-                    mLoginButton.setEnabled(true);
-                }else {
-                    mClearLoginNameView.setVisibility(View.INVISIBLE);
-//                    mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorMyLayoutCommon));
-                    mLoginButton.setEnabled(false);
-                }
-
-            }
-        });
         mClearLoginNameView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 mLoginNameView.setText(null);
+            }
+        });
+        mCipherPassView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mCipherPassView.isChecked()){
+//                    mPasswordView.setInputType(EditorInfo.TYPE_TEXT_VARIATION_PASSWORD);
+                    mPasswordView.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+
+                }else {
+//                   mPasswordView.setInputType(EditorInfo.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                    mPasswordView.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+
             }
         });
         mLoginButton.setOnClickListener(new View.OnClickListener() {
@@ -96,7 +131,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(TAG, mLoginNameView.getText().toString());//获取用户名
 //                mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorButtonOClick));
-                if (mLoginNameView.getText().toString().trim().length() < 8 || mLoginNameView.getText().toString().trim().length() > 16) {
+                //已经限制了输入位数最多是16位，此处不需要判断大于16位
+                if (mLoginNameView.getText().toString().trim().length() < 8 ) {
                     Toast toast;
                     toast = Toast.makeText(getApplicationContext(), "输入的用户名位数不对", Toast.LENGTH_SHORT);
                     toast.show();
@@ -150,7 +186,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onResume();
 
 
-        Log.i(TAG, "onResume处于焦点");
+        Log.i(TAG, "onResume处于焦点"+mPasswordView.hasFocus());
 
 
     }
@@ -195,3 +231,4 @@ public class LoginActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy销毁，被回收");
     }
 }
+

@@ -3,6 +3,7 @@ package yanxiu.com.yxyl;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,18 +16,25 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
-   private Button mRequest;
+    private static final String TAG = "杜歪歪";
+    private Button mRequest;
     private TextView mReponse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initData();
-        lister();
-
+//        lister();
 
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        lister();
+    }
+
     private  void  initData(){
         mRequest=(Button) findViewById(R.id.request);
         mReponse=(TextView) findViewById(R.id.response);
@@ -34,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void lister(){
+
         mRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,17 +52,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void sendRequest(){
+        Log.i(TAG,"点击了已经");
         new  Thread(new Runnable() {
             @Override
             public void run() {
                 HttpURLConnection connection=null;
                 BufferedReader reader=null;
                 try{
-                    URL url=new URL("http://www.baidu.com");
+                    URL url=new URL("http://www.yanxiu.com");
                     connection=(HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");
-                    connection.setConnectTimeout(5000);
-                    connection.setReadTimeout(5000);
+                    connection.setConnectTimeout(8000);
+                    connection.setReadTimeout(8000);
+
+
                     InputStream  in= connection.getInputStream();
                     //读取输入流in
                     reader=new BufferedReader(new InputStreamReader(in));

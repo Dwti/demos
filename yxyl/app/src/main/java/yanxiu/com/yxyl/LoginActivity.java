@@ -70,12 +70,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
-
-    private void hasChanged() {
-        MyTextWatch myTextWatch=new MyTextWatch();
-        mLoginNameView.addTextChangedListener(myTextWatch);
-        mPasswordView.addTextChangedListener(myTextWatch);
-    }
     //自定义监听器
     class MyTextWatch implements TextWatcher{
         @Override
@@ -97,15 +91,18 @@ public class LoginActivity extends AppCompatActivity {
             }
 
         }
-
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
         }
     }
+    private void hasChanged() {
+        MyTextWatch myTextWatch=new MyTextWatch();
+        mLoginNameView.addTextChangedListener(myTextWatch);
+        mPasswordView.addTextChangedListener(myTextWatch);
+    }
     private void lister() {
         hasChanged();
-
         mClearLoginNameView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -130,30 +127,27 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, mLoginNameView.getText().toString());//获取用户名
+                Toast toast;
 //                mLoginButton.setBackgroundColor(getResources().getColor(R.color.colorButtonOClick));
                 //已经限制了输入位数最多是16位，此处不需要判断大于16位
-                if (mLoginNameView.getText().toString().trim().length() < 8 ) {
-                    Toast toast;
+                if (mLoginNameView.getText().toString().trim().length() < 11) {
+
                     toast = Toast.makeText(getApplicationContext(), "输入的用户名位数不对", Toast.LENGTH_SHORT);
+                    toast.show();
+                } else if (mPasswordView.getText().toString().trim().length() < 6) {
+                    toast = Toast.makeText(getApplicationContext(), "密码位数不对", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
                     Intent intent = new Intent(LoginActivity.this, JoinClassActivity.class);
                     if (intent.resolveActivity(getPackageManager()) != null) {
                         startActivity(intent);
                     }
+
                 }
             }
         });
-       /* mLoginButton.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(hasFocus){
-                    mLoginButton.setBackgroundColor(Color.WHITE);
-                }
-            }
-        });*/
-
     }
+
 
 
     private void initData() {

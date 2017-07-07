@@ -77,11 +77,11 @@
                 android:id="@+id/tx_getCodenumber"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="获取验证码"
                 android:layout_marginLeft="18dp"
-                android:textColor="@color/colorCommon"
+                android:textColor="@color/text_btn_selector"
                 android:textSize="16dp"
-                android:background="@drawable/selector_sendbtn_bg"
                 android:enabled="false"/>
         </LinearLayout>
 

@@ -6,5 +6,6 @@
     <color name="colorCommon">#89e00d</color>
     <color name="colorMyLayoutCommon">#69ad0a</color>
     <color name="colorButtonOClick">#c2FFFFFF</color>
+    <color name="colorTextClickAble">#FFFFFF</color>
 
 </resources>

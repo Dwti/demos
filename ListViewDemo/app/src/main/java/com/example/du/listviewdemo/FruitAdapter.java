@@ -17,7 +17,7 @@ import java.util.List;
  * Created by dutingting on 2017/5/31.
  */
 /*自定义一个FruitAdapter适配器继承ArrayAdapter*/
-public class FruitAdapter extends ArrayAdapter<Fruit>{
+public class   FruitAdapter extends ArrayAdapter<Fruit>{
     private  int resourceid;
     public FruitAdapter(Context context, int textViewId, List<Fruit> fruits){
 

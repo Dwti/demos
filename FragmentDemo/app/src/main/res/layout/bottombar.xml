@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/icon_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信"/>
+        <Button
+            android:id="@+id/bt_QQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ"/>
+        <Button
+            android:id="@+id/bt_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博"/>
+        <Button
+            android:id="@+id/bt_baidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看百度首页"/>
+
+    </RadioGroup>
+
+</LinearLayout>

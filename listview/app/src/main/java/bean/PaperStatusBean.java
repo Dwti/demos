@@ -1,0 +1,124 @@
+package bean;
+
+/**
+ * Created by srt-k12001 on 2017/12/19.
+ */
+
+public class PaperStatusBean extends  BaseBean {
+    private String tid;
+    private String ppid;
+    private int status ;
+    private long endtime;
+    private int costtime;
+    private String gid;
+    private int userCount;
+    private float scoreRate;
+    private String teachercomments;
+    private String teacherName;
+    private String checkStatus;  // 1:已批改；0：未批改
+
+    public String getTid() {
+        return tid;
+    }
+
+    public void setTid(String tid) {
+        this.tid = tid;
+    }
+
+    public String getPpid() {
+        return ppid;
+    }
+
+    public void setPpid(String ppid) {
+        this.ppid = ppid;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public long getEndtime() {
+        return endtime;
+    }
+
+    public void setEndtime(long endtime) {
+        this.endtime = endtime;
+    }
+
+    public int getCosttime() {
+        return costtime;
+    }
+
+    public void setCosttime(int costtime) {
+        this.costtime = costtime;
+    }
+
+    public String getGid() {
+        return gid;
+    }
+
+    public void setGid(String gid) {
+        this.gid = gid;
+    }
+
+    public int getUserCount() {
+        return userCount;
+    }
+
+    public void setUserCount(int userCount) {
+        this.userCount = userCount;
+    }
+
+    public float getScoreRate() {
+        return scoreRate;
+    }
+
+    public void setScoreRate(float scoreRate) {
+        this.scoreRate = scoreRate;
+    }
+
+    public String getTeachercomments() {
+        return teachercomments;
+    }
+
+    public void setTeachercomments(String teachercomments) {
+        this.teachercomments = teachercomments;
+    }
+
+    public String getTeacherName() {
+        return teacherName;
+    }
+
+    public void setTeacherName(String teacherName) {
+        this.teacherName = teacherName;
+    }
+
+    public String getCheckStatus() {
+        return checkStatus;
+    }
+
+    public void setCheckStatus(String checkStatus) {
+        this.checkStatus = checkStatus;
+    }
+
+    @Override
+    public String toString() {
+        return "PaperStatusBean{" +
+                "tid='" + tid + '\'' +
+                ", ppid='" + ppid + '\'' +
+                ", status=" + status +
+                ", endtime=" + endtime +
+                ", costtime=" + costtime +
+                ", gid='" + gid + '\'' +
+                ", userCount=" + userCount +
+                ", scoreRate=" + scoreRate +
+                ", teachercomments='" + teachercomments + '\'' +
+                ", teacherName='" + teacherName + '\'' +
+                ", checkStatus='" + checkStatus + '\'' +
+                '}';
+    }
+}

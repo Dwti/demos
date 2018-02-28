@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/im_homework"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+
+            />
+
+        <TextView
+            android:id="@+id/tx_homeworkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/im_homework"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:text="9月6日数学作业" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tx_completeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="完成题量1/8"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tx_homeworkDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="可补做"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tx_techerComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="hhhhhhhhhhh"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

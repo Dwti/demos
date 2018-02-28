@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="du.com.fragmentdemo.MainActivity">
+    <fragment
+
+        android:id="@+id/title_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:name="du.com.fragmentdemo.TitleFragment">
+
+    </fragment>
+    <include
+        android:id="@+id/id_ly_bottombar"
+        layout="@layout/bottombar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true">
+
+    </include>
+    <!--<fragment
+        android:id="@+id/context_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:name="du.com.fragmentdemo.ContextFragment">
+
+    </fragment>-->
+    <FrameLayout
+        android:id="@+id/my_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_fragment"
+        android:layout_above="@+id/id_ly_bottombar">
+
+    </FrameLayout>
+
+</RelativeLayout>
